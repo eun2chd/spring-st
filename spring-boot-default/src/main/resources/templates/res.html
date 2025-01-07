@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,16 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<table border="1">
-    <tr>
-        <th>이름</th>
-        <th>나이</th>
-    </tr>
-    <tr th:each="person : ${people}">
-        <td th:text="${person.name}">이름</td>
-        <td th:text="${person.age}">나이</td>
-    </tr>
-</table>
+    <h1>Res 결과 확인</h1>
+    <ul>
+        <li>이름 : <strong th:text="${name}"></strong></li>
+        <li>이름 : <strong th:text="${age}"></strong></li>
+    </ul>
+    <a href="/static">홈으로 이동</a>
 
 </body>
 </html>

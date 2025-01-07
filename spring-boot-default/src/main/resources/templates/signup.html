@@ -8,16 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-<table border="1">
-    <tr>
-        <th>이름</th>
-        <th>나이</th>
-    </tr>
-    <tr th:each="person : ${people}">
-        <td th:text="${person.name}">이름</td>
-        <td th:text="${person.age}">나이</td>
-    </tr>
-</table>
-
+<h1>Res 결과 확인</h1>
+<ul>
+    <li>이름 : <strong th:text="${name}"></strong></li>
+    <li>성별 : <strong th:text="${gender}"></strong></li>
+    <li>생년월일 : <strong th:text="${birthdate}"></strong></li>
+    <li>관심사 : <strong th:text="${interest}"></strong></li>
+</ul>
+<a href="/static">홈으로 이동</a>
 </body>
 </html>
